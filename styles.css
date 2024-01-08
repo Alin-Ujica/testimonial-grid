@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-family: 'Barlow Semi Condensed';
+}
+
+body {
+    background-color: #ECF2F8;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.testimonies {
+    display: grid;
+    gap: 1.5rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.t1 {
+    background-color: #733FC8;
+    color: white;
+}
+
+.t2 {
+    background-color: #48556A;
+    color: white;
+}
+
+.t3 {
+    background-color: white;
+    color: black;
+}
+
+.t4 {
+    background-color: #19202D;
+    color: white;
+}
+
+.t5 {
+    background-color: white;
+    color: black;
+}
+
+.graduates {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.verified {
+    font-size: 13px;
+    color: #CFCFCF;
+}
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5 {
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 15px 0;
+}
+
+.description {
+    color: #CFCFCF;
+}
+
+.description.white {
+    color: #48556A;
+}
+
+@media(min-width: 50em) {
+
+    .testimonies {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .t5 {
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+}
